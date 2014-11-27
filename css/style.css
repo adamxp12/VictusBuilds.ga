@@ -1,0 +1,56 @@
+.bg {
+  background: url('img/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 1s ease-in-out; /* For Safari 3.1 to 6.0 */
+  transition: all 1s ease-in-out;
+  height: 94%;
+}
+
+.bg-cont {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 100%;
+  overflow: visible;
+}
+.head {
+  position: absolute;
+  top: 10px;
+  left: auto;
+  right: auto;
+  z-index: 9999;
+  height: 94%
+  width: 100%;
+}
+.header {
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 95px;
+  padding-top: 10%;
+}
+
+.subheader {
+  color: #D4D4D4;
+}
+
+.spaced {
+  margin-top: 15px;
+}
+
+.example-orbit {
+  z-index: 999;
+}
+
+.example-orbit li {
+  height: 100%;
+}
+
+.orbit-container {
+    height: 94%;
+}
+
+.orbit-slides-container {
+  height: 100% !important
+  }
