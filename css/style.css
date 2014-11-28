@@ -72,10 +72,21 @@
   margin-left: auto;
   margin-right: auto;
   width: 75%;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(215,215,215,0.65);
   border-style: none;
 }
 
 .overlay-close {
   float: right;
+  position: relative;
+  top: -10px;
+  right: -5px;
+  color: #000;
+  font-size: 1.5em;
+  -webkit-transition: all 0.5s ease-in-out; /* For Safari 3.1 to 6.0 */
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay-close:hover {
+  color: #fff;
 }
