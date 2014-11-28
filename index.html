@@ -6,11 +6,18 @@
     <title>Victus Build Team</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/overlay.js"></script>
   </head>
   <body>
+    <div class="overlay" id="overlay"><div class="panel">
+      <a href="#" class="overlay-close" onclick="hideoverlay();"><i class="fa fa-close fa-fw"> </i></a>
+      <h5>This is a regular panel.</h5> <p>It has an easy to override visual style, and is appropriately subdued.</p>      
+    </div>
+  </div>
+
     <div class="large-12 text-center head">
       <div class="header">Victus Build Team</div>
       <div class="subheader">Minecraft Build Team</div>
@@ -39,6 +46,7 @@
         </ul>
         <section class="top-bar-section">
           <ul class="right">
+            <li><a href="#" onclick="showoverlay();"><i class="fa fa-question fa-fw"></i> About</a></li>
             <li class="active"><a href="#"><i class="fa fa-users fa-fw"></i> Forums</a></li>
           </ul>
           <ul class="left">

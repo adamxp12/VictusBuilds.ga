@@ -20,7 +20,7 @@
   top: 10px;
   left: auto;
   right: auto;
-  z-index: 9999;
+  z-index: 101;
   height: 94%
   width: 100%;
 }
@@ -40,7 +40,7 @@
 }
 
 .example-orbit {
-  z-index: 999;
+  z-index: 99;
 }
 
 .example-orbit li {
@@ -54,3 +54,27 @@
 .orbit-slides-container {
   height: 100% !important
   }
+
+.overlay {
+  z-index: 9999;
+  background-color: rgba(0,0,0,0.4);
+  opacity: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 1s ease-in-out; /* For Safari 3.1 to 6.0 */
+  transition: all 1s ease-in-out;
+  visibility: hidden;
+  }
+
+.overlay .panel {
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.overlay-close {
+  float: right;
+}
