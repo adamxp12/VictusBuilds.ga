@@ -90,3 +90,6 @@
 .overlay-close:hover {
   color: #fff;
 }
+.icon-bar {
+  z-index: 999;
+}
