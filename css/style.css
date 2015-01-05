@@ -1,95 +1,168 @@
-.bg {
-  background: url('img/bg.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transition: all 1s ease-in-out; /* For Safari 3.1 to 6.0 */
-  transition: all 1s ease-in-out;
-  height: 94%;
-}
+/*
+ClickMine Theme 2015
+Created by Adam (adamxp12.com)
+*/
 
-.bg-cont {
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  height: 100%;
-  overflow: visible;
-}
-.head {
-  position: absolute;
-  top: 10px;
-  left: auto;
-  right: auto;
-  z-index: 101;
-  height: 94%
-  width: 100%;
-}
-.header {
-  color: #fff;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 95px;
-  padding-top: 10%;
-}
-
-.subheader {
-  color: #D4D4D4;
-}
-
-.spaced {
-  margin-top: 15px;
-}
-
-.example-orbit {
-  z-index: 99;
-}
-
-.example-orbit li {
+body {
+  background: #F7F7F7;
   height: 100%;
 }
 
-.orbit-container {
-    height: 93.8%;
+.container-page {
+  position: relative;
+  top: -50px;
 }
 
-.orbit-slides-container {
-  height: 100% !important
-  }
 
-.overlay {
-  z-index: 9999;
-  background-color: rgba(0,0,0,0.4);
-  opacity: 0;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  -webkit-transition: all 1s ease-in-out; /* For Safari 3.1 to 6.0 */
-  transition: all 1s ease-in-out;
-  visibility: hidden;
-  }
+/* Header image */
 
-.overlay .panel {
-  margin-top: 20%;
+.header-img {
+    background: url('img/header.jpg') no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: -85px;
+    /*padding-top: 160px;*/
+    overflow: hidden;
+    height: 90%;
+}
+
+.header-img .container {
+ top: 30%;
+ position: relative;
+}
+
+.header-img h1 { /* Used for main heading on medium+ screens */
+  font-size: 75px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.74);
+  text-rendering: optimizeLegibility !important;
+}
+
+.header-img h2 { /* Used for subheading on medium+ screens and main heading on small screens */
+  font-size: 35px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.8);
+}
+
+.header-img h3 { /* Used for subheading on small screens */
+  font-size: 25px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.8);
+}
+
+.header-small {
+  height: 45%;
+}
+
+/* End Header image
+
+
+/* menu */
+
+.main-menu {
+  background: none repeat scroll 0% 0% rgba(30, 30, 30, 0.8);
+  height: 85px;
+  line-height: 85px;
+}
+.main-menu .title-area, .main-menu .name, .main-menu .name h1 {
+  height: inherit;
+  line-height: 85px;
+  font-size: 1.5925rem;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.main-menu-section li:not(.has-form) a:not(.button) {
+    padding: 0px 15px;
+    line-height: 85px;
+    background: none repeat scroll 0% 0% rgba(30, 30, 35, 0); /* Make menu item have transparent background */
+    height: 85px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.top-bar-section ul li {
+    background: none repeat scroll 0% 0% rgba(30, 30, 35, 0.55); /* The actual background */
+}
+
+/* End menu */
+
+
+/* Heading */
+
+h1, h2 , h4 {
+  font-family: 'Oxygen', sans-serif;
+}
+.title-h1 {
+  color: #DBDBDB;
+  font-weight: 300;
+}
+
+/* End Heading */
+
+
+/* Button */
+
+.button {
+  background-color: #64A118;
+  border-color: #64A118;
+}
+.button:hover {
+  background-color: #71B41D;
+  border-color: #71B41D;
+}
+
+.button:active {
+  background-color: #71B41D;
+  border-color: #71B41D;
+}
+
+/* End Button */
+
+
+/* Custom Labels */
+
+.label.subscribe {
+  background-color: #FFC246;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.label.subscribe:hover {
+  color: rgba(100, 100, 100, 1);
+}
+
+/* End Custom Labels */
+
+
+/* Some utility classes */
+.img-center {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
-  background-color: rgba(215,215,215,0.65);
-  border-style: none;
 }
 
-.overlay-close {
-  float: right;
-  position: relative;
-  top: -10px;
-  right: -5px;
-  color: #000;
-  font-size: 1.5em;
-  -webkit-transition: all 0.5s ease-in-out; /* For Safari 3.1 to 6.0 */
-  transition: all 0.5s ease-in-out;
+.img-round {
+  width: 300px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(20, 20, 20, 0.2);
+  border: 5px solid rgba(20, 20, 20, 0.2);
 }
 
-.overlay-close:hover {
-  color: #fff;
+.space {
+  margin-top: 25px;
 }
-.icon-bar {
-  z-index: 999;
+
+.status {
+  list-style: none;
+}
+
+.noselect { /* http://stackoverflow.com/questions/826782/css-rule-to-disable-text-selection-highlighting */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
